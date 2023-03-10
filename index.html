@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mi Música</title>
+
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <h1>Mi Música</h1>
+  <ul id="jair-music"></ul>
+   
+    <div class="player-container">
+        <audio id="player" src="cancion.mp3"></audio>
+        <div class="player-controls">
+          <button class="play-pause"></button>
+          <div class="progress-container">
+            <div class="progress"></div>
+          </div>
+        </div>
+        <ul class="playlist">
+          <li><a href="God's Plan - Drake.mp3">God's Plan - Drake</a></li>
+          <li><a href="Hotline Bling - Drake.mp3">Hotline Bling - Drake</a></li>
+          <li><a href="You Know How We Do It - Ice Cube.mp3">You Know How We Do It - Ice Cube</a></li>
+        </ul>
+      </div>
+      
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+
+.player-container {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0px 0px 10px #ddd;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.player-controls {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.play-pause {
+  width: 350px;
+  height: 350px;
+  background-image: url('html.jpeg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.play-pause:hover {
+  transform: scale(1.1);
+}
+
+.playing {
+  background-image: url('https://image.flaticon.com/icons/png/512/56/56791.png');
+}
+
+.progress-container {
+  margin-left: 10px;
+  width: 200px;
+  height: 10px;
+  background-color: #eee;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.progress {
+  height: 100%;
+  width: 0%;
+  background-color: #29b6f6;
+  border-radius: 10px;
+  transition: width 0.1s linear;
+}
+
+.playlist {
+  margin-top: 30px;
+  padding: 0;
+  list-style: none;
+}
+
+.playlist li {
+  margin-bottom: 10px;
+}
+
+.playlist li a {
+  display: block;
+  padding: 10px;
+  background-color: #29b6f6;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.playlist li a:hover {
+  background-color: #039be5;
+}
